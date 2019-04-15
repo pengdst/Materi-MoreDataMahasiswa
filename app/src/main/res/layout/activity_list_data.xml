@@ -5,47 +5,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListDataActivity">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile Mahasiswa"
-            android:textSize="27sp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"/>
-        <TextView
-            android:id="@+id/tv_Nama"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nama"/>
-        <TextView
-            android:id="@+id/tv_Nim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="NIM"/>
-        <TextView
-            android:id="@+id/tv_Prodi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Prodi"/>
-        <TextView
-            android:id="@+id/tv_Kelas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Kelas"/>
-        <TextView
-            android:id="@+id/tv_Status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Status"/>
-        <Button
-            android:id="@+id/bt_Insert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Insert"/>
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Mahasiswa"
+                android:textSize="27sp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imgvw_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"/>
+            <TextView
+                android:id="@+id/tv_Nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIM"/>
+            <TextView
+                android:id="@+id/tv_Prodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prodi"/>
+            <TextView
+                android:id="@+id/tv_Kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelas"/>
+            <TextView
+                android:id="@+id/tv_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status"/>
+            <Button
+                android:id="@+id/bt_Insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insert"/>
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

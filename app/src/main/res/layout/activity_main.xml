@@ -5,48 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_marginTop="16dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile Mahasiswa"
-            android:textSize="27sp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"/>
-        <EditText
-            android:id="@+id/et_Nama"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nama"/>
-        <EditText
-            android:id="@+id/et_Nim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="NIM"/>
-        <EditText
-            android:id="@+id/et_Prodi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Prodi"/>
-        <EditText
-            android:id="@+id/et_Kelas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Kelas"/>
-        <EditText
-            android:id="@+id/et_Status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Status"/>
-        <Button
-            android:id="@+id/bt_Insert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Insert"/>
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Mahasiswa"
+                android:textSize="27sp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgvw_pic"
+                android:src="@drawable/ic_camera_black_24dp"/>
+            <EditText
+                android:id="@+id/et_Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"/>
+            <EditText
+                android:id="@+id/et_Nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIM"/>
+            <EditText
+                android:id="@+id/et_Prodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prodi"/>
+            <EditText
+                android:id="@+id/et_Kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelas"/>
+            <EditText
+                android:id="@+id/et_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status"/>
+            <Button
+                android:layout_marginBottom="16dp"
+                android:id="@+id/bt_Insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insert"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>
